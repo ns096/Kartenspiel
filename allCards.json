@@ -1,0 +1,33 @@
+{
+    "0":{
+        "name":"just a test",
+        "type":0,
+        "element":0
+    },
+    "1":{
+        "name":"Yoch",
+        "type":0,
+        "element":1
+    },
+    "2":{
+        "name":"Angnia",
+        "type":0,
+        "element":2
+    },
+    "3":{
+        "name":"Fulamr",
+        "type":0,
+        "element":3
+    },
+    "4":{
+        "name":"Momantul",
+        "type":0,
+        "element":4
+    },
+    "5":{
+        "name":"Essiah",
+        "type":0,
+        "element":5
+    }
+
+}

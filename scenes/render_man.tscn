@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scripts/render_man.cs" type="Script" id=1]
+[ext_resource path="res://scenes/cards/baseCard.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/player_hand.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/game_field.tscn" type="PackedScene" id=4]
+
+[node name="render_man" type="Spatial"]
+script = ExtResource( 1 )
+baseCard = ExtResource( 2 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.290976, 0.95673, 0, -0.95673, 0.290976, 0, 3.75593, 1.21984 )
+fov = 32.6939
+
+[node name="player_hand" parent="." instance=ExtResource( 3 )]
+transform = Transform( 0.38508, 0, 0, 0, 0.371124, -0.102731, 0, 0.102731, 0.371124, 0, 0.232058, 0.671855 )
+
+[node name="opponent_hand" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.38508, -5.70462e-009, -4.11977e-008, -3.31144e-008, 0.27284, 0.271744, 2.51641e-008, 0.271744, -0.27284, 5.07674e-009, 0.32514, -1.04194 )
+
+[node name="game_field" parent="." instance=ExtResource( 4 )]
+
